@@ -16,6 +16,7 @@
         <RepositoryType>git</RepositoryType>
         <PackageTags>walletconnect wallet web3 ether ethereum blockchain evm</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>

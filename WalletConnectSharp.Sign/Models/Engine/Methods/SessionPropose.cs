@@ -12,7 +12,7 @@ namespace WalletConnectSharp.Sign.Models.Engine.Methods
     /// is proposing the session
     /// </summary>
     [RpcMethod("wc_sessionPropose")]
-    [RpcRequestOptions(Clock.FIVE_MINUTES, true, 1100)]
+    [RpcRequestOptions(Clock.FIVE_MINUTES, 1100)]
     public class SessionPropose : IWcMethod
     {
         /// <summary>
@@ -26,6 +26,18 @@ namespace WalletConnectSharp.Sign.Models.Engine.Methods
         /// </summary>
         [JsonProperty("requiredNamespaces")]
         public RequiredNamespaces RequiredNamespaces { get; set; }
+        
+        /// <summary>
+        /// The optional namespaces for this session
+        /// </summary>
+        [JsonProperty("optionalNamespaces")]
+        public Dictionary<string, RequiredNamespace> OptionalNamespaces { get; set; }
+        
+        /// <summary>
+        /// Custom session properties for this session
+        /// </summary>
+        [JsonProperty("sessionProperties")]
+        public Dictionary<string, string> SessionProperties { get; set; }
         
         /// <summary>
         /// The <see cref="Participant"/> that created this session proposal

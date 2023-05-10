@@ -16,6 +16,7 @@
         <PackageTags>walletconnect wallet web3 ether ethereum blockchain evm</PackageTags>
         <PackageIcon>icon.png</PackageIcon>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+       <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
